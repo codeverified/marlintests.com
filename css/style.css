@@ -23,14 +23,15 @@ header{
     width:auto;
 }
 .container{
-    max-width:700px;
-    margin:auto;
-    padding:40px 25px;
+    width:90%;
+    max-width:1200px;
+    margin:50px auto;
 }
 
 h1{
-    font-size:54px;
-    margin-bottom:25px;
+    font-size:64px;
+    font-weight:700;
+    margin-bottom:20px;
 }
 
 p{
@@ -48,22 +49,22 @@ label{
 
 input{
     width:100%;
-    padding:22px;
+    height:70px;
+    padding:20px;
+    font-size:28px;
     background:#eef2f5;
     border:none;
-    border-radius:4px;
-    font-size:24px;
-    font-weight:bold;
+    border-radius:5px;
 }
 
 button{
-    margin-top:25px;
-    background:#19d98c;
-    color:white;
+    margin-top:30px;
+    background:#18d98d;
+    color:#fff;
     border:none;
-    padding:18px 45px;
-    font-size:24px;
-    border-radius:4px;
+    padding:18px 50px;
+    font-size:26px;
+    border-radius:5px;
     cursor:pointer;
 }
 
