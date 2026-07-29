@@ -16,10 +16,11 @@ header{
     text-align:center;
 }
 
-.logo-text{
-    color:#fff;
-    font-size:42px;
-    font-weight:bold;
+.logo{
+    width:220px;
+    height:auto;
+    display:block;
+    margin:0 auto;
 }
 
 .container{
