@@ -127,3 +127,17 @@ hr{
     flex:1;
     font-size:22px;
 }
+.success-text{
+    font-size:22px;
+    line-height:1.7;
+}
+
+.success-text a{
+    color:#f39c12;
+    font-weight:bold;
+    text-decoration:underline;
+}
+
+.success-text strong{
+    font-weight:bold;
+}
