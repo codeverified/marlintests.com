@@ -1,12 +1,12 @@
-document
-.getElementById("verifyBtn")
-.addEventListener("click",function(){
+document.getElementById("verifyBtn").addEventListener("click", function(){
 
-const cert=document
-.getElementById("certificate")
-.value;
+    const cert = document.getElementById("certificate").value.trim();
 
-window.location.href=
-"result.html?cert="+cert;
+    if(cert === ""){
+        alert("Please enter a certificate code.");
+        return;
+    }
+
+    window.location.href = "result.html?cert=" + encodeURIComponent(cert);
 
 });
