@@ -12,15 +12,15 @@ body{
 
 header{
     background:#0a84c6;
-    height:80px;
+    height:90px;
     display:flex;
     align-items:center;
-    padding:0 40px;
+    padding-left:30px;
 }
 
 .logo{
-    height:90px;
-    width:auto;
+    width:220px;
+    height:auto;
     display:block;
 }
 .container{
