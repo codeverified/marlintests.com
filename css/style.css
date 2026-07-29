@@ -71,3 +71,18 @@ button{
 button:hover{
     background:#14c57e;
 }
+.result-table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:30px;
+}
+
+.result-table td{
+    padding:15px;
+    border-bottom:1px solid #ddd;
+    font-size:22px;
+}
+
+hr{
+    margin:30px 0;
+}
