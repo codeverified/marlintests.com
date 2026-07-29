@@ -21,6 +21,7 @@ header{
 .logo{
     height:90px;
     width:auto;
+    display:block;
 }
 .container{
     width:900px;
