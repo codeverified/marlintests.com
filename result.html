@@ -1,68 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Certificate Result</title>
+<div class="result-data">
 
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <div class="row">
+        <div class="label">Training Center:</div>
+        <div class="value" id="center">PT. Mega Karya Marindo</div>
+    </div>
 
-<body>
+    <div class="row">
+        <div class="label">Candidate Name:</div>
+        <div class="value" id="name">JUMADIL JATI</div>
+    </div>
 
-<header>
-    <img src="images/logo.png" alt="Logo" class="logo">
-</header>
+    <div class="row">
+        <div class="label">Seaman Book No:</div>
+        <div class="value" id="book">H 054696</div>
+    </div>
 
-<div class="container">
+    <div class="row">
+        <div class="label">Test:</div>
+        <div class="value" id="test">ICS Marlins English Test</div>
+    </div>
 
-    <h1>Certificate Verified</h1>
+    <div class="row">
+        <div class="label">Date:</div>
+        <div class="value" id="date">1 April 2024</div>
+    </div>
 
-    <p>
-        The certificate has been successfully verified.
-    </p>
+    <div class="row">
+        <div class="label">Location:</div>
+        <div class="value" id="location">INDONESIA</div>
+    </div>
 
-    <hr>
+    <div class="row">
+        <div class="label">Score:</div>
+        <div class="value" id="score">87%</div>
+    </div>
 
-    <table class="result-table">
-
-        <tr>
-            <td><strong>Certificate Code</strong></td>
-            <td id="certCode">-</td>
-        </tr>
-
-        <tr>
-            <td><strong>Name</strong></td>
-            <td>John Smith</td>
-        </tr>
-
-        <tr>
-            <td><strong>Course</strong></td>
-            <td>Basic Safety Training</td>
-        </tr>
-
-        <tr>
-            <td><strong>Issue Date</strong></td>
-            <td>29 July 2026</td>
-        </tr>
-
-        <tr>
-            <td><strong>Status</strong></td>
-            <td style="color:green;"><strong>VALID</strong></td>
-        </tr>
-
-    </table>
+    <div class="row">
+        <div class="label">Time Taken:</div>
+        <div class="value" id="time">00:46:18</div>
+    </div>
 
 </div>
-
-<script>
-const params = new URLSearchParams(window.location.search);
-const cert = params.get("cert");
-
-if(cert){
-    document.getElementById("certCode").innerText = cert;
-}
-</script>
-
-</body>
-</html>
