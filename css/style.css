@@ -11,21 +11,20 @@ body{
 }
 
 header{
-    background:#08384d;
-    height:110px; /* lebih tipis */
+    background:#0a84c6;
+    height:80px;
     display:flex;
-    justify-content:center;
     align-items:center;
+    padding:0 40px;
 }
 
 .logo{
-    height:90px; /* sesuaikan dengan tinggi header */
+    height:45px;
     width:auto;
 }
 .container{
-    width:90%;
-    max-width:1200px;
-    margin:50px auto;
+    width:900px;
+    margin:40px auto;
 }
 
 h1{
