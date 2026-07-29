@@ -141,3 +141,31 @@ hr{
 .success-text strong{
     font-weight:bold;
 }
+/* ===========================
+   CERTIFICATE DETAILS
+=========================== */
+
+.result-data{
+    margin-top:50px;
+    border-top:1px solid #dcdcdc;
+    padding-top:30px;
+}
+
+.row{
+    display:flex;
+    padding:14px 0;
+    border-bottom:1px solid #ececec;
+}
+
+.label{
+    width:280px;
+    font-size:20px;
+    font-weight:bold;
+    color:#555;
+}
+
+.value{
+    flex:1;
+    font-size:20px;
+    color:#222;
+}
