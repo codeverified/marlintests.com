@@ -1,91 +1,73 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+/* ===========================
+   DESKTOP
+=========================== */
 
 body{
+    margin:0;
     font-family:Arial, Helvetica, sans-serif;
-    background:#fff;
+    background:#ffffff;
     color:#222;
 }
 
+/* HEADER */
+
 header{
+    width:100%;
+    height:110px;
     background:#0a84c6;
-    height:90px;
     display:flex;
     align-items:center;
-    padding-left:30px;
+    padding:0 40px;
+}
+
+header a{
+    display:flex;
+    align-items:center;
 }
 
 .logo{
-    width:220px;
+    width:320px;
     height:auto;
-    display:block;
 }
+
+/* CONTAINER */
+
 .container{
-    width:900px;
-    margin:40px auto;
+    width:100%;
+    max-width:1000px;
+    margin:50px auto;
+    padding:0 15px;
 }
 
-h1{
-    font-size:64px;
-    font-weight:700;
-    margin-bottom:20px;
-}
+/* BADGE */
 
-p{
-    font-size:22px;
-    line-height:36px;
+.badge{
+    display:inline-block;
+    background:#2ecc71;
+    color:#fff;
+    padding:10px 18px;
+    border-radius:4px;
+    font-size:18px;
+    font-weight:bold;
     margin-bottom:25px;
 }
 
-label{
-    display:block;
-    margin-bottom:10px;
-    color:#666;
+/* TITLE */
+
+h1{
+    font-size:52px;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+.subtitle{
     font-size:22px;
+    color:#555;
+    margin-bottom:35px;
 }
 
-input{
-    width:100%;
-    height:70px;
-    padding:20px;
-    font-size:28px;
-    background:#eef2f5;
-    border:none;
-    border-radius:5px;
-}
+/* SUCCESS */
 
-button{
-    margin-top:30px;
-    background:#18d98d;
-    color:#fff;
-    border:none;
-    padding:18px 50px;
-    font-size:26px;
-    border-radius:5px;
-    cursor:pointer;
-}
-
-button:hover{
-    background:#14c57e;
-}
-.result-table{
-    width:100%;
-    border-collapse:collapse;
-    margin-top:30px;
-}
-
-.result-table td{
-    padding:15px;
-    border-bottom:1px solid #ddd;
-    font-size:22px;
-}
-
-hr{
-    margin:30px 0;
-}
 .success-box{
     margin:40px 0;
 }
@@ -98,48 +80,106 @@ hr{
 }
 
 .check-icon{
-    width:70px;
-    height:70px;
+    width:55px;
+    height:55px;
 }
 
-.success-item p{
-    margin:0;
-    font-size:22px;
-    line-height:1.6;
+.success-text{
+    font-size:20px;
+    line-height:1.8;
 }
+
+/* TABLE */
 
 .result-data{
-    margin-top:40px;
+    margin-top:45px;
+    border-top:1px solid #ddd;
 }
 
 .row{
     display:flex;
-    margin-bottom:18px;
+    padding:18px 0;
+    border-bottom:1px solid #eee;
 }
 
 .label{
-    width:320px;
+    width:300px;
+    font-size:20px;
     font-weight:bold;
-    font-size:22px;
+    color:#666;
 }
 
 .value{
     flex:1;
-    font-size:22px;
-}
-.success-text{
-    font-size:22px;
-    line-height:1.7;
+    font-size:20px;
 }
 
-.success-text a{
-    color:#f39c12;
+/* BACK */
+
+.back-link{
+    display:inline-block;
+    margin-top:40px;
+    color:#0085ca;
+    text-decoration:none;
+    font-size:22px;
     font-weight:bold;
-    text-decoration:underline;
 }
 
-.success-text strong{
-    font-weight:bold;
+/* FOOTER */
+
+footer{
+    margin-top:80px;
+    background:#666;
+    color:#fff;
+    padding:60px 50px;
+}
+
+.footer-logo{
+    width:300px;
+    height:auto;
+}
+
+.footer-columns{
+    display:flex;
+    justify-content:space-between;
+    gap:80px;
+    margin-top:40px;
+}
+
+.footer-column{
+    flex:1;
+}
+
+.footer-column h3{
+    font-size:30px;
+    margin-bottom:10px;
+}
+
+.footer-column hr{
+    width:180px;
+    height:4px;
+    border:none;
+    background:#f39c12;
+    margin-bottom:20px;
+}
+
+.footer-column p{
+    font-size:20px;
+    line-height:1.8;
+}
+
+.footer-bottom{
+    margin-top:60px;
+    padding-top:20px;
+    border-top:1px solid rgba(255,255,255,.3);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.social-icons{
+    display:flex;
+    gap:25px;
 }
 /* ===========================
    CERTIFICATE DETAILS
