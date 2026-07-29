@@ -12,14 +12,14 @@ body{
 
 header{
     background:#08384d;
-    height:180px;
+    height:110px; /* lebih tipis */
     display:flex;
     justify-content:center;
     align-items:center;
 }
 
 .logo{
-    height:280px;
+    height:80px; /* sesuaikan dengan tinggi header */
     width:auto;
 }
 .container{
