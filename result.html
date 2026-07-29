@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate Result</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <img src="images/logo.png" alt="Logo" class="logo">
+</header>
+
+<div class="container">
+
+    <h1>Certificate Verified</h1>
+
+    <p>
+        The certificate has been successfully verified.
+    </p>
+
+    <hr>
+
+    <table class="result-table">
+
+        <tr>
+            <td><strong>Certificate Code</strong></td>
+            <td id="certCode">-</td>
+        </tr>
+
+        <tr>
+            <td><strong>Name</strong></td>
+            <td>John Smith</td>
+        </tr>
+
+        <tr>
+            <td><strong>Course</strong></td>
+            <td>Basic Safety Training</td>
+        </tr>
+
+        <tr>
+            <td><strong>Issue Date</strong></td>
+            <td>29 July 2026</td>
+        </tr>
+
+        <tr>
+            <td><strong>Status</strong></td>
+            <td style="color:green;"><strong>VALID</strong></td>
+        </tr>
+
+    </table>
+
+</div>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+const cert = params.get("cert");
+
+if(cert){
+    document.getElementById("certCode").innerText = cert;
+}
+</script>
+
+</body>
+</html>
