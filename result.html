@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="css/style.css">
 </head>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 <body>
 
 <header>
@@ -103,10 +103,28 @@
         </div>
 
     </div>
+    <div class="qr-section">
+
+    <h3>Scan to Verify</h3>
+
+    <div id="qrcode"></div>
+
+</div>
 <a href="index.html" class="back-link">
     ← Back
 </a>
     </div>
+    </div>
+
+<!-- QR CODE -->
+<div class="qr-section">
+    <h3>Scan to Verify</h3>
+    <div id="qrcode"></div>
+</div>
+
+<a href="index.html" class="back-link">
+    ← Back
+</a>
 <footer>
 
     <div class="footer-top">
@@ -169,6 +187,42 @@
 
     </div>
 
+</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+<script>
+const certificateCode = "7FB58417E6ECCFDB";
+
+const verifyUrl =
+window.location.origin +
+"/marlintests.com/result.html?cert=" +
+certificateCode;
+
+new QRCode(document.getElementById("qrcode"),{
+    text:verifyUrl,
+    width:180,
+    height:180
+});
 </footer>
+
+<!-- Library QR Code -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+<script>
+const certificateCode = "7FB58417E6ECCFDB";
+
+const verifyUrl =
+window.location.origin +
+window.location.pathname +
+"?cert=" +
+certificateCode;
+
+new QRCode(document.getElementById("qrcode"),{
+    text: verifyUrl,
+    width:180,
+    height:180
+});
+</script>
+
 </body>
 </html>
